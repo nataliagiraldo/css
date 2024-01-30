@@ -1,0 +1,207 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#anim {
+    height: 400px;
+    width: 1024px;
+    background-image: url('/imagenes/campo.jpeg');
+    position: relative;
+    overflow: hidden;
+
+}
+
+#sol {
+    height: 90px;
+    width: 140px;
+    background-image: url('/imagenes/sol.png');
+    background-size: cover;
+    position: absolute;
+    left: 80%;
+    opacity: 1;
+    animation: sol 2s infinite alternate ease-in-out;
+    animation-delay: 5s;
+
+
+}
+
+#nube {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-image: url('/imagenes/nube.png');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    top: 60px;
+    animation: nube-pause-run 10s;
+    animation-delay: 5s;
+    opacity: 0;
+
+}
+
+#lluvia {
+    position: relative;
+    background-size: 15px;
+    width: 60px;
+    height: 0px;
+    background-image: url('/imagenes/lluvia.png');
+    animation: goteo 1s;
+    animation-delay: 9s;
+
+}
+
+#flor {
+    background-image: url('/imagenes/flor.png');
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    position: absolute;
+    left: 40%;
+    animation: flor 7s;
+    bottom: -30px;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+}
+
+div#mensajes {
+    position: absolute;
+    background: url("/imagenes/321.jpeg") no-repeat top;
+    background-size: cover;
+    width: 185px;
+    height: 200px;
+    top: 20%;
+    left: 40%;
+    background-position-x: 0%;
+    animation: movMensaje 4s linear 2s forwards;
+}
+
+@keyframes movMensaje {
+
+    10% {
+        opacity: 0;
+        background-position-x: 0%;
+    }
+
+    20% {
+        opacity: 0;
+        background-position-x: 32%;
+    }
+
+    30% {
+        opacity: 1;
+        background-position-x: 32%;
+    }
+
+    40% {
+        opacity: 0;
+        background-position-x: 32%;
+    }
+
+    50% {
+        opacity: 0;
+        background-position-x: 66%;
+    }
+
+    60% {
+        opacity: 1;
+        background-position-x: 66%;
+    }
+
+    70% {
+        opacity: 0;
+        background-position-x: 66%;
+    }
+
+    80% {
+        opacity: 0;
+        background-position-x: 100%;
+    }
+
+    90% {
+        opacity: 1;
+        background-position-x: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        background-position-x: 100%;
+    }
+}
+
+@keyframes sol {
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0.5;
+
+    }
+}
+
+@keyframes nube-pause-run {
+
+    0%,
+    10% {
+        opacity: 1;
+        right: -50px;
+
+    }
+
+    35%,
+    60% {
+        opacity: 1;
+        right: 50%;
+    }
+
+    80%,
+    100% {
+        opacity: 1;
+        right: 110%;
+
+
+    }
+}
+
+@keyframes goteo {
+    0% {
+        top: 130px;
+    }
+
+    50% {
+        height: 170px;
+        top: 70px;
+        background-position: top;
+    }
+
+    100% {
+        background-position: top;
+        top: 660px;
+        height: 0px;
+    }
+}
+
+@keyframes flor {
+    0% {
+        opacity: 100%;
+        bottom: -900px;
+    }
+
+    50% {
+        opacity: 100%;
+        bottom: -300px;
+    }
+
+    100% {
+        opacity: 100%;
+        bottom: -5px;
+
+    }
+
+}
