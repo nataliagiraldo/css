@@ -7,7 +7,7 @@ body {
 #anim {
     height: 400px;
     width: 1024px;
-    background-image: url('/imagenes/campo.jpeg');
+    background-image: url('../imagenes/campo.jpeg');
     position: relative;
     overflow: hidden;
 
@@ -16,7 +16,7 @@ body {
 #sol {
     height: 90px;
     width: 140px;
-    background-image: url('/imagenes/sol.png');
+    background-image: url('../imagenes/sol.png');
     background-size: cover;
     position: absolute;
     left: 80%;
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     position: absolute;
-    background-image: url('/imagenes/nube.png');
+    background-image: url('../imagenes/nube.png');
     height: 100px;
     width: 100px;
     background-size: cover;
@@ -47,14 +47,14 @@ body {
     background-size: 15px;
     width: 60px;
     height: 0px;
-    background-image: url('/imagenes/lluvia.png');
+    background-image: url('../imagenes/lluvia.png');
     animation: goteo 1s;
     animation-delay: 9s;
 
 }
 
 #flor {
-    background-image: url('/imagenes/flor.png');
+    background-image: url('../imagenes/flor.png');
     height: 100px;
     width: 100px;
     background-size: cover;
@@ -70,7 +70,7 @@ body {
 
 div#mensajes {
     position: absolute;
-    background: url("/imagenes/321.jpeg") no-repeat top;
+    background: url("../imagenes/321.jpeg") no-repeat top;
     background-size: cover;
     width: 185px;
     height: 200px;
